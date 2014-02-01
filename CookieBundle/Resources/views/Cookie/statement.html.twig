@@ -1,0 +1,25 @@
+{% if not accepted %}
+    {% stylesheets '@CookieBundle/Resources/public/less/style.less' %}
+    <link rel="stylesheet" href="{{ asset_url }}">
+    {% endstylesheets %}
+
+    <section class="cookie">
+        Ważne: nasze strony wykorzystują pliki cookies. Używamy informacji zapisanych za pomocą cookies i podobnych
+        technologii
+        m.in. w celach reklamowych i statystycznych oraz w celu dostosowania naszych serwisów do indywidualnych potrzeb
+        użytkowników. Mogą też stosować je współpracujący z nami reklamodawcy, firmy badawcze oraz dostawcy aplikacji
+        multimedialnych. W programie służącym do obsługi internetu można zmienić ustawienia dotyczące
+        cookies.Korzystanie
+        z naszych serwisów internetowych bez zmiany ustawień dotyczących cookies oznacza, że będą one zapisane w pamięci
+        urządzenia.
+        <section class="agree-button">
+            <button id="cookieAgree" class="btn-success btn-small" data-ajax-url="{{ path('cookie_accept') }}">
+                Akceptuję
+            </button>
+        </section>
+    </section>
+    {% javascripts '@CookieBundle/Resources/public/js/script.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endif %}
+
