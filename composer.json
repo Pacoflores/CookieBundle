@@ -17,7 +17,7 @@
     },
     "minimum-stability": "dev",
     "autoload": {
-        "psr-0": { "ConWeb\\Bundle\\CookieBundle": "" }
+        "psr-0": { "ConWeb\\CookieBundle": "" }
     },
     "target-dir": "ConWeb/Bundle/CookieBundle"
 }
