@@ -69,4 +69,6 @@ Template should have fallowing structure:
     {% endif %}
 ```
 
-TODO: customize only the stamement text not the whole template
+TODO: 
+- customize only the stamement text not the whole template
+- customize less path
