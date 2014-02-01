@@ -41,6 +41,13 @@ public function registerBundles()
 }
 ```
 
+4. Add routing import to your routing.yml
+```yml
+cookie:
+    resource: "@CookieBundle/Resources/config/routing.xml"
+    prefix:   /
+```
+
 ## Customization
 You can change the default statement template by placing configuration parameters in your config.yml file:
 ```yml
